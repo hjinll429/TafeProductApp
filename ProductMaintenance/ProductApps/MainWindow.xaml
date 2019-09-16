@@ -18,6 +18,8 @@
         <TextBlock x:Name="totalChargeTextBlock" HorizontalAlignment="Left" Height="23" Margin="187,204,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" FontWeight="Bold" RenderTransformOrigin="1.19,-0.749"/>
         <TextBlock x:Name="totalChargeWRTextBlock_Copy"  HorizontalAlignment="Left" Height="37" Margin="38,232,0,0" VerticalAlignment="Top" Width="144" RenderTransformOrigin="0.603,3.276"><Run Text="Total Charge after adding "/><LineBreak/><Run Text="the "/><Run Text="wrap "/><Run Text="charge ($5)"/><Run Text=" :"/></TextBlock>
         <TextBlock x:Name="totalAddedChargeTextBlock" HorizontalAlignment="Left" Height="23" Margin="187,246,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" FontWeight="Bold" RenderTransformOrigin="1.19,-0.749"/>
+        <TextBlock x:Name="totalChargeWRTextBlock_Copy1"  HorizontalAlignment="Left" Height="37" Margin="38,272,0,0" VerticalAlignment="Top" Width="144" RenderTransformOrigin="0.603,3.276"><Run Text="Total Charge Ater GST"/><LineBreak/><Run Text="@ 10%"/></TextBlock>
+        <TextBlock x:Name="totalGSTChargeTextBlock" HorizontalAlignment="Left" Height="23" Margin="187,286,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" FontWeight="Bold" RenderTransformOrigin="1.19,-0.749"/>
 
 
     </Grid>

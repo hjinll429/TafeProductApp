@@ -15,12 +15,14 @@ using System.Windows.Shapes;
 
 namespace ProductApps
 {
+    
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
         Product cProduct;
+        const double GST_RATE = 1.1;
 
         public MainWindow()
         {
@@ -29,6 +31,8 @@ namespace ProductApps
 
         private void calculateButton_Click(object sender, RoutedEventArgs e)
         {
+            
+            double num1;
             try
             {
                 cProduct = new Product(Convert.ToDecimal(priceTextBox.Text), Convert.ToInt16(quantityTextBox.Text));
@@ -36,6 +40,9 @@ namespace ProductApps
                 totalPaymentTextBlock.Text = Convert.ToString(cProduct.TotalPayment); //fixed
                 totalChargeTextBlock.Text = Convert.ToString(cProduct.TotalPayment + 25);
                 totalAddedChargeTextBlock.Text = Convert.ToString(cProduct.TotalPayment + 30);
+                
+                num1 = double.Parse(totalAddedChargeTextBlock.Text);
+                totalGSTChargeTextBlock.Text = "$" + (num1 * GST_RATE);
             }
             catch (FormatException)
             {

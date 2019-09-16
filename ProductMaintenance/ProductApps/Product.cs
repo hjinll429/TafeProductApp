@@ -53,6 +53,8 @@ namespace ProductApps
             set { gst = value; }
         }
 
+        public object totalAddedChargeTextBlock { get; internal set; }
+
         //Constructor for Product
         public Product(decimal price, int quantity)
         {
